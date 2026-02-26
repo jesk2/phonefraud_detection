@@ -1,0 +1,72 @@
+# Environment
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files (large datasets)
+*.csv
+raw_data.csv
+tele_antifraud_raw.csv
+*.xlsx
+*.xls
+
+# Model artifacts
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+# Visualization outputs
+*.png
+*.jpg
+*.jpeg
+feature_distributions.png
+confusion_matrix.png
+roc_curve.png
+feature_importance.png
+
+# Sensitive data
+*.key
+*.pem
+.env
+.env.local
+credentials.json
+secrets/
+
+# OS
+.DS_Store
+Thumbs.db
