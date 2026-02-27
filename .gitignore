@@ -2,18 +2,70 @@
 .venv/
 .venv311/
 venv/
+ENV/
+env/
+
+# Build / packaging
+*.egg-info/
+.eggs/
+dist/
+build/
 
 # Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
 
-# Data
-data/
-*.csv
-*.zip
+# Testing / coverage
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
 
-# Jupyter checkpoints
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
 .ipynb_checkpoints/
 
-# macOS
+# Data files (large datasets)
+data/
+*.csv
+*.xlsx
+*.xls
+*.zip
+raw_data.csv
+tele_antifraud_raw.csv
+
+# Model artifacts
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+# Visualization outputs
+*.png
+*.jpg
+*.jpeg
+
+# Sensitive data
+*.key
+*.pem
+.env
+.env.local
+credentials.json
+secrets/
+
+# OS
 .DS_Store
+Thumbs.db
