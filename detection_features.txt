@@ -1,0 +1,60 @@
+Persuasion & Psychological Manipulation Cues
+
+Urgency & Temporal Pressure
+Fraud calls frequently induce time pressure ("act now," "within 24 hours") to suppress deliberation.
+How to extract: 
+- Urgency lexicons + regex ("immediately", "expires")
+- Imperative language detection through Part-of-Speech tagging
+- "Do not hang up." "Press 1 now." "Transfer the money today."
+- Transformer-based urgency scoring (fine-tuned SBERT/BERT)
+
+Authority Invocation & Institutional Impersonation
+Scammers impersonate banks, government agencies, or executives using institutional register.
+How to extract: 
+- Named Entity Recognition for orgs/agencies ("IRS", "Bank of America")
+- Authority-title patterns ("Agent Smith", "Fraud Department")
+- Embedding similarity to legitimate institutional communication templates
+
+Fear & Threat Language 
+Threat language ("arrest," "account suspended") is a dominant compliance driver.
+How to extract: 
+- Threat lexicons + negative emotion categories
+- Conditional threat parsing ("If you don't X, then Y")
+- Emotion or threat classifiers 
+
+Trust-Building & Manipulation
+Fraudsters establish familiarity and reciprocity to lower suspicion.
+How to extract: 
+- Personalization detection (recipient name, role entities)
+- Style matching against known legitimate sender profiles
+
+Conversational Dynamics (throughout) 
+
+Information Elicitation Patterns - Verification of Personal Info 
+Fraud is strongly characterized by credential solicitation framed as "verification."
+How to extract: 
+- Regex for personal info such as SSN, DOB, account numbers, passwords 
+- Question classification (information-seeking speech acts)
+- Verb-frame triggers ("confirm", "verify", "submit")
+
+Request Escalation & Compliance Framing
+Calls often follow staged escalation: small verification → sensitive demand → payment.
+How to extract: 
+- Dialogue act tagging (directive/request density)
+- Sequential Transformer models  
+- Sensitivity tracking of requests across conversation timeline
+
+Coherence and Consistency 
+
+Narrative Inconsistency & Contradiction Signals
+Fabricated narratives degrade under questioning, producing inconsistencies.
+How to extract: 
+- Natural Language inference (NLI) contradiction scoring across turns
+- Check referential consistency
+- Temporal consistency checking ("yesterday" vs "last month")
+
+Lexical & Syntactic Anomalies (Declining Utility)
+Traditional stylometric cues (grammar errors, odd phrasing) worked for legacy scams but are brittle against LLM-generated fraud.
+How to extract: 
+- LLM detection of odd phrasing/ wrong grammar
+- May be increasingly weak with AI usage.
