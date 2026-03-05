@@ -1,0 +1,35 @@
+{"conversation_id": "conv_001", "label": "scam", "scam_type": "tech_support", "early_detection_target_turn": 4, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "Hi, this is Jamie from Microsoft support. We detected a serious issue on your computer.", "persuasion_stage": 1, "manipulation_features": {"authority": true, "urgency": false, "threat": false, "verification": false, "emotional_pressure": false, "scarcity": false, "reciprocity": false}},
+  {"turn_id": 2, "speaker": "victim", "text": "Oh, I didn't know anything was wrong.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "Your computer is infected with a dangerous virus and it could leak your bank details.", "persuasion_stage": 3, "manipulation_features": {"authority": true, "urgency": true, "threat": true, "emotional_pressure": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "You must fix this immediately or your accounts may be frozen.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "threat": true, "scarcity": true}},
+  {"turn_id": 5, "speaker": "scammer", "text": "Buy a $200 gift card right now and read me the code so I can remove the virus.", "persuasion_stage": 5, "manipulation_features": {"urgency": true, "payment_request": true}}
+]}
+{"conversation_id": "conv_002", "label": "scam", "scam_type": "irs", "early_detection_target_turn": 4, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "This is Agent Cooper from the Internal Revenue Service.", "persuasion_stage": 2, "manipulation_features": {"authority": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "Is there a problem with my taxes?", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "Yes, you owe back taxes and there is a lawsuit being filed against you.", "persuasion_stage": 4, "manipulation_features": {"authority": true, "threat": true, "emotional_pressure": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "If you do not resolve this today, you may be arrested.", "persuasion_stage": 4, "manipulation_features": {"threat": true, "urgency": true}},
+  {"turn_id": 5, "speaker": "scammer", "text": "You can avoid arrest by paying the balance now using prepaid vouchers.", "persuasion_stage": 5, "manipulation_features": {"payment_request": true, "urgency": true}}
+]}
+{"conversation_id": "conv_003", "label": "scam", "scam_type": "bank", "early_detection_target_turn": 3, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "This is the fraud department from First National Bank.", "persuasion_stage": 2, "manipulation_features": {"authority": true}},
+  {"turn_id": 2, "speaker": "scammer", "text": "We noticed suspicious activity on your account and need to verify some details.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "verification": true}},
+  {"turn_id": 3, "speaker": "scammer", "text": "Please read me your full card number and the three digits on the back so we can secure your funds.", "persuasion_stage": 5, "manipulation_features": {"verification": true, "payment_request": true}},
+  {"turn_id": 4, "speaker": "victim", "text": "Are you really from the bank?", "persuasion_stage": 1, "manipulation_features": {}},
+  {"turn_id": 5, "speaker": "scammer", "text": "Yes, I'm only trying to help you keep your money safe.", "persuasion_stage": 1, "manipulation_features": {"reciprocity": true, "emotional_pressure": true}}
+]}
+{"conversation_id": "conv_004", "label": "legit", "scam_type": "delivery", "early_detection_target_turn": null, "turns": [
+  {"turn_id": 1, "speaker": "agent", "text": "Hi, this is Kelly from NorthStar Shipping. I'm calling about a package scheduled for delivery tomorrow.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 2, "speaker": "customer", "text": "Oh great, what do you need from me?", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "agent", "text": "We just need to confirm your preferred delivery window, morning or afternoon.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 4, "speaker": "customer", "text": "Afternoon works best.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 5, "speaker": "agent", "text": "Perfect, you don't need to pay anything, it's already covered.", "persuasion_stage": 0, "manipulation_features": {}}
+]}
+{"conversation_id": "conv_005", "label": "scam", "scam_type": "refund", "early_detection_target_turn": 5, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "I'm calling from Global Services to issue you a refund for an overcharge.", "persuasion_stage": 1, "manipulation_features": {"reciprocity": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "A refund? I don't remember being overcharged.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "It was a small mistake on your computer maintenance plan, we just want to fix it for you.", "persuasion_stage": 1, "manipulation_features": {"reciprocity": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "To process the refund, we need you to log into your online banking right now.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "verification": true}},
+  {"turn_id": 5, "speaker": "scammer", "text": "Once you're logged in, tell me your current balance so I can send the refund and make sure it posts correctly.", "persuasion_stage": 5, "manipulation_features": {"payment_request": true, "verification": true}}
+]}
