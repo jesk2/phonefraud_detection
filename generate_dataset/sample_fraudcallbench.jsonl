@@ -20,7 +20,7 @@
   {"turn_id": 5, "speaker": "scammer", "text": "Yes, I'm only trying to help you keep your money safe.", "persuasion_stage": 1, "manipulation_features": {"reciprocity": true, "emotional_pressure": true}}
 ]}
 {"conversation_id": "conv_004", "label": "legit", "scam_type": "delivery", "early_detection_target_turn": null, "turns": [
-  {"turn_id": 1, "speaker": "agent", "text": "Hi, this is Kelly from NorthStar Shipping. I'm calling about a package scheduled for delivery tomorrow.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 1, "speaker": "agent", "text": "Hi, this is NorthStar Shipping. I'm calling about a package scheduled for delivery tomorrow.", "persuasion_stage": 0, "manipulation_features": {}},
   {"turn_id": 2, "speaker": "customer", "text": "Oh great, what do you need from me?", "persuasion_stage": 0, "manipulation_features": {}},
   {"turn_id": 3, "speaker": "agent", "text": "We just need to confirm your preferred delivery window, morning or afternoon.", "persuasion_stage": 0, "manipulation_features": {}},
   {"turn_id": 4, "speaker": "customer", "text": "Afternoon works best.", "persuasion_stage": 0, "manipulation_features": {}},
