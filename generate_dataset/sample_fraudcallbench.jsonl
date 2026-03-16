@@ -33,3 +33,124 @@
   {"turn_id": 4, "speaker": "scammer", "text": "To process the refund, we need you to log into your online banking right now.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "verification": true}},
   {"turn_id": 5, "speaker": "scammer", "text": "Once you're logged in, tell me your current balance so I can send the refund and make sure it posts correctly.", "persuasion_stage": 5, "manipulation_features": {"payment_request": true, "verification": true}}
 ]}
+
+
+{"conversation_id": "conv_1", "label": "scam", "scam_type": "refund", "early_detection_target_turn": 5, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "I'm calling from Global Services to issue you a refund for an overcharge.", "persuasion_stage": 1, "manipulation_features": {"reciprocity": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "A refund? I don't remember being overcharged.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "It was a small mistake on your computer maintenance plan, we just want to fix it for you.", "persuasion_stage": 1, "manipulation_features": {"reciprocity": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "To process the refund, we need you to log into your online banking right now.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "verification": true}},
+  {"turn_id": 5, "speaker": "scammer", "text": "Once you're logged in, tell me your current balance so I can send the refund and make sure it posts correctly.", "persuasion_stage": 5, "manipulation_features": {"payment_request": true, "verification": true}}
+]}
+
+{"conversation_id": "conv_006", "label": "scam", "scam_type": "delivery", "early_detection_target_turn": 6, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "Hello, this is Express Parcel Services about a package that couldn't be delivered.", "persuasion_stage": 1, "manipulation_features": {"rapport": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "Oh, I wasn't expecting anything, what is it?", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "It's listed as an important document shipment requiring your signature.", "persuasion_stage": 2, "manipulation_features": {"authority": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "If you don't confirm today, the package will be returned to sender.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "scarcity": true}},
+  {"turn_id": 5, "speaker": "victim", "text": "Okay, what do I need to do?", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 6, "speaker": "scammer", "text": "To release it, there is a small customs clearance fee, please pay now with a gift card code.", "persuasion_stage": 5, "manipulation_features": {"urgency": true, "payment_request": true}}
+]}
+{"conversation_id": "conv_007", "label": "scam", "scam_type": "tech_support", "early_detection_target_turn": 8, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "Hi, I'm Daniel from your internet provider's security team, how are you today?", "persuasion_stage": 1, "manipulation_features": {"rapport": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "I'm fine, is something wrong with my internet?", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "We detected unusual traffic from your router that could indicate a hacker.", "persuasion_stage": 3, "manipulation_features": {"authority": true, "urgency": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "If we don't resolve this, your connection may be suspended for security reasons.", "persuasion_stage": 4, "manipulation_features": {"threat": true, "urgency": true}},
+  {"turn_id": 5, "speaker": "victim", "text": "I really need my internet for work, what can we do?", "persuasion_stage": 1, "manipulation_features": {}},
+  {"turn_id": 6, "speaker": "scammer", "text": "Don't worry, I'm going to help you fix this right now.", "persuasion_stage": 1, "manipulation_features": {"reciprocity": true}},
+  {"turn_id": 7, "speaker": "scammer", "text": "First, install a remote access tool so I can clean the problem.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "verification": true}},
+  {"turn_id": 8, "speaker": "scammer", "text": "To activate the security license, please purchase a $300 network protection card and read me the code.", "persuasion_stage": 5, "manipulation_features": {"payment_request": true, "urgency": true}}
+]}
+{"conversation_id": "conv_008", "label": "scam", "scam_type": "grandparent", "early_detection_target_turn": 5, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "Grandma, it's me, I got into some trouble.", "persuasion_stage": 1, "manipulation_features": {"emotional_pressure": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "Who is this? You sound scared.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "It's your grandson, I was in a car accident and they arrested me.", "persuasion_stage": 4, "manipulation_features": {"threat": true, "emotional_pressure": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "Please don't tell mom and dad, I only have one chance to fix this.", "persuasion_stage": 4, "manipulation_features": {"emotional_pressure": true, "scarcity": true}},
+  {"turn_id": 5, "speaker": "scammer", "text": "The lawyer says if you send $4,000 in gift cards today, the charges will be dropped.", "persuasion_stage": 5, "manipulation_features": {"payment_request": true, "urgency": true}}
+]}
+{"conversation_id": "conv_009", "label": "legit", "scam_type": "bank", "early_detection_target_turn": null, "turns": [
+  {"turn_id": 1, "speaker": "agent", "text": "This is the fraud monitoring team from Community Bank calling about a recent transaction.", "persuasion_stage": 2, "manipulation_features": {"authority": true}},
+  {"turn_id": 2, "speaker": "customer", "text": "Okay, is something wrong?", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "agent", "text": "We saw a $900 online purchase that looks unusual for your account.", "persuasion_stage": 3, "manipulation_features": {"urgency": true}},
+  {"turn_id": 4, "speaker": "agent", "text": "For your security, please confirm only the last four digits of your card.", "persuasion_stage": 3, "manipulation_features": {"verification": true}},
+  {"turn_id": 5, "speaker": "customer", "text": "It's 1234. I didn't make that purchase.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 6, "speaker": "agent", "text": "Thank you. We've blocked the charge and you will not be billed anything.", "persuasion_stage": 0, "manipulation_features": {}}
+]}
+{"conversation_id": "conv_010", "label": "scam", "scam_type": "lottery", "early_detection_target_turn": 5, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "Congratulations! This is the International Lotto Commission, you've won a major prize.", "persuasion_stage": 1, "manipulation_features": {"emotional_pressure": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "I don't remember entering any lottery.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "Your phone number was selected from a global customer appreciation program.", "persuasion_stage": 2, "manipulation_features": {"authority": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "We must process your claim today or the prize will go to an alternate winner.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "scarcity": true}},
+  {"turn_id": 5, "speaker": "scammer", "text": "To release the funds, you just need to pay a small processing fee via prepaid voucher.", "persuasion_stage": 5, "manipulation_features": {"payment_request": true, "urgency": true}}
+]}
+{"conversation_id": "conv_011", "label": "legit", "scam_type": "irs", "early_detection_target_turn": null, "turns": [
+  {"turn_id": 1, "speaker": "agent", "text": "This is Maria calling from the IRS Taxpayer Assistance Center.", "persuasion_stage": 2, "manipulation_features": {"authority": true}},
+  {"turn_id": 2, "speaker": "taxpayer", "text": "Oh, is there a problem?", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "agent", "text": "No, we're following up about a refund that was mailed back as undeliverable.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 4, "speaker": "agent", "text": "We will resend it by check to the address you confirm in your online account. We do not take any payment over the phone.", "persuasion_stage": 0, "manipulation_features": {}}
+]}
+{"conversation_id": "conv_012", "label": "scam", "scam_type": "bank", "early_detection_target_turn": 6, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "This is James from Premier Bank's security desk.", "persuasion_stage": 2, "manipulation_features": {"authority": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "Security desk? Did something happen?", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "We detected someone trying to access your account from another country.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "threat": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "If we don't verify now, your funds could be permanently frozen.", "persuasion_stage": 4, "manipulation_features": {"threat": true, "urgency": true, "scarcity": true}},
+  {"turn_id": 5, "speaker": "victim", "text": "That's scary. What do I need to verify?", "persuasion_stage": 1, "manipulation_features": {}},
+  {"turn_id": 6, "speaker": "scammer", "text": "Please read me your full card number, expiration date, and security code so I can secure your account.", "persuasion_stage": 5, "manipulation_features": {"verification": true, "payment_request": true}}
+]}
+{"conversation_id": "conv_013", "label": "legit", "scam_type": "tech_support", "early_detection_target_turn": null, "turns": [
+  {"turn_id": 1, "speaker": "agent", "text": "Hi, this is Alex from CityNet Internet Support.", "persuasion_stage": 1, "manipulation_features": {}},
+  {"turn_id": 2, "speaker": "customer", "text": "Hi, my connection keeps dropping today.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "agent", "text": "We are doing scheduled maintenance in your area, so you may experience brief interruptions.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 4, "speaker": "agent", "text": "There's no extra charge on your account and you don't need to pay anything.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 5, "speaker": "customer", "text": "Okay, thanks for letting me know.", "persuasion_stage": 0, "manipulation_features": {}}
+]}
+{"conversation_id": "conv_014", "label": "scam", "scam_type": "charity", "early_detection_target_turn": 4, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "Hi, this is Mark calling from the National Police Officers Relief Fund.", "persuasion_stage": 2, "manipulation_features": {"authority": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "Oh, that sounds important.", "persuasion_stage": 1, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "Our officers risk their lives daily, and we're raising emergency funds for injured families.", "persuasion_stage": 3, "manipulation_features": {"emotional_pressure": true, "scarcity": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "Can we count on you for a $200 donation right now using your card over the phone?", "persuasion_stage": 5, "manipulation_features": {"payment_request": true, "urgency": true, "emotional_pressure": true}}
+]}
+{"conversation_id": "conv_015", "label": "scam", "scam_type": "investment", "early_detection_target_turn": 6, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "I'm calling from Global Crypto Capital with a special opportunity.", "persuasion_stage": 1, "manipulation_features": {"rapport": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "I'm not really an investor.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "Many of our clients started just like you and doubled their savings.", "persuasion_stage": 1, "manipulation_features": {"reciprocity": true, "emotional_pressure": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "This is a limited-time program approved by our financial authority board.", "persuasion_stage": 2, "manipulation_features": {"authority": true, "scarcity": true}},
+  {"turn_id": 5, "speaker": "scammer", "text": "If you wait, you could miss out on thousands of dollars in gains.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "emotional_pressure": true}},
+  {"turn_id": 6, "speaker": "scammer", "text": "All you need is to transfer $1,000 today to lock in your slot.", "persuasion_stage": 5, "manipulation_features": {"payment_request": true, "urgency": true}}
+]}
+{"conversation_id": "conv_016", "label": "legit", "scam_type": "medical", "early_detection_target_turn": null, "turns": [
+  {"turn_id": 1, "speaker": "agent", "text": "Good afternoon, this is Dr. Lee's office calling about your recent blood test.", "persuasion_stage": 2, "manipulation_features": {"authority": true}},
+  {"turn_id": 2, "speaker": "patient", "text": "Is something wrong?", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "agent", "text": "The doctor would like to see you as soon as possible to discuss the results.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "emotional_pressure": true}},
+  {"turn_id": 4, "speaker": "agent", "text": "There is no additional fee for this visit beyond your normal insurance.", "persuasion_stage": 0, "manipulation_features": {}}
+]}
+{"conversation_id": "conv_017", "label": "scam", "scam_type": "student_loan", "early_detection_target_turn": 6, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "Hi, this is the Federal Student Loan Forgiveness Center.", "persuasion_stage": 2, "manipulation_features": {"authority": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "I've been trying to lower my payments.", "persuasion_stage": 1, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "You qualify for a special government program that can erase most of your debt.", "persuasion_stage": 1, "manipulation_features": {"emotional_pressure": true, "reciprocity": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "The deadline is today, after that you won't be eligible.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "scarcity": true}},
+  {"turn_id": 5, "speaker": "victim", "text": "That sounds good, how does it work?", "persuasion_stage": 1, "manipulation_features": {}},
+  {"turn_id": 6, "speaker": "scammer", "text": "To enroll, we just need a one-time processing payment by card over the phone.", "persuasion_stage": 5, "manipulation_features": {"payment_request": true, "urgency": true}}
+]}
+{"conversation_id": "conv_018", "label": "scam", "scam_type": "utility", "early_detection_target_turn": 5, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "This is the disconnect department from City Electric.", "persuasion_stage": 2, "manipulation_features": {"authority": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "Disconnect? I paid my bill last week.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "Our system shows an outstanding balance, and your power is scheduled to be shut off in 30 minutes.", "persuasion_stage": 4, "manipulation_features": {"threat": true, "urgency": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "Once it's disconnected, it can take days to restore service.", "persuasion_stage": 4, "manipulation_features": {"threat": true, "scarcity": true}},
+  {"turn_id": 5, "speaker": "scammer", "text": "You can avoid shutoff by paying the balance now using prepaid cards.", "persuasion_stage": 5, "manipulation_features": {"payment_request": true, "urgency": true}}
+]}
+{"conversation_id": "conv_019", "label": "legit", "scam_type": "delivery", "early_detection_target_turn": null, "turns": [
+  {"turn_id": 1, "speaker": "agent", "text": "Hi, this is CourierPlus with a package for you that requires a small cash-on-delivery payment.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 2, "speaker": "customer", "text": "Okay, how much is it and what is it for?", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "agent", "text": "It's $15, and it's from your online grocery order. You can also refuse it and we will return it at no cost.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 4, "speaker": "customer", "text": "That's fine, I'll pay the driver when they arrive.", "persuasion_stage": 0, "manipulation_features": {}}
+]}
+{"conversation_id": "conv_020", "label": "scam", "scam_type": "refund", "early_detection_target_turn": 7, "turns": [
+  {"turn_id": 1, "speaker": "scammer", "text": "I'm calling from Prime Support about a service you were charged for last year.", "persuasion_stage": 1, "manipulation_features": {"rapport": true}},
+  {"turn_id": 2, "speaker": "victim", "text": "I don't remember that service.", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 3, "speaker": "scammer", "text": "We are closing our company and issuing refunds to all customers.", "persuasion_stage": 1, "manipulation_features": {"reciprocity": true}},
+  {"turn_id": 4, "speaker": "scammer", "text": "You are actually eligible for a larger refund than you paid.", "persuasion_stage": 1, "manipulation_features": {"emotional_pressure": true}},
+  {"turn_id": 5, "speaker": "victim", "text": "Okay... what do you need from me?", "persuasion_stage": 0, "manipulation_features": {}},
+  {"turn_id": 6, "speaker": "scammer", "text": "Please open your online banking so we can transfer the funds.", "persuasion_stage": 3, "manipulation_features": {"urgency": true, "verification": true}},
+  {"turn_id": 7, "speaker": "scammer", "text": "To make sure the transfer completes, you must send back a verification amount using gift cards.", "persuasion_stage": 5, "manipulation_features": {"payment_request": true, "verification": true}}
+]}
